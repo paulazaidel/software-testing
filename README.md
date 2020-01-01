@@ -25,7 +25,7 @@ It is  a structure of developing a 3-step test facilitates reading and understan
 
 - **Facts** are tests which are always true. They test invariant conditions.
 ```csharp
- [Fact]
+[Fact]
 public void Calculator_Sum_ReturnSumValue()
 {
 	// Arrange
