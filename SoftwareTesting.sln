@@ -4,12 +4,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 - Basic Tests", "1.1 - Basic Tests", "{7800EC21-AA2B-42DA-B0E0-0A911D6A511D}"
+	ProjectSection(SolutionItems) = preProject
+		01 - Unit Test\Demo\Demo.csproj = 01 - Unit Test\Demo\Demo.csproj
+		01 - Unit Test\Demo.Tests\Demo.Tests.csproj = 01 - Unit Test\Demo.Tests\Demo.Tests.csproj
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Unit Test", "01 - Unit Test", "{6032A141-CE91-4E40-8D15-9A0DF591209F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{A43017BA-18B2-42E9-9203-A21103B3BDDC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - TDD", "02 - TDD", "{6790D5B0-6CEA-4997-AA5E-2172E9B43A6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Tests", "Demo.Tests\Demo.Tests.csproj", "{FB0EF53A-048C-4960-95E5-1DBA089523AD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D5B13924-F172-491D-9E6D-BCEAD9209FB7}"
+	ProjectSection(SolutionItems) = preProject
+		02 - TDD\tests\NerdStore.Sales.Application.Tests\NerdStore.Sales.Application.Tests.csproj = 02 - TDD\tests\NerdStore.Sales.Application.Tests\NerdStore.Sales.Application.Tests.csproj
+		02 - TDD\tests\NerdStore.Sales.Domain.Tests\NerdStore.Sales.Domain.Tests.csproj = 02 - TDD\tests\NerdStore.Sales.Domain.Tests\NerdStore.Sales.Domain.Tests.csproj
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Sales.Domain", "02 - TDD\src\NerdStore.Sales.Domain\NerdStore.Sales.Domain.csproj", "{2F2491C8-9E4D-4530-9C51-89E0D3901570}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,22 +27,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A43017BA-18B2-42E9-9203-A21103B3BDDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A43017BA-18B2-42E9-9203-A21103B3BDDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A43017BA-18B2-42E9-9203-A21103B3BDDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A43017BA-18B2-42E9-9203-A21103B3BDDC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB0EF53A-048C-4960-95E5-1DBA089523AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB0EF53A-048C-4960-95E5-1DBA089523AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB0EF53A-048C-4960-95E5-1DBA089523AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB0EF53A-048C-4960-95E5-1DBA089523AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F2491C8-9E4D-4530-9C51-89E0D3901570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F2491C8-9E4D-4530-9C51-89E0D3901570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F2491C8-9E4D-4530-9C51-89E0D3901570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F2491C8-9E4D-4530-9C51-89E0D3901570}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7800EC21-AA2B-42DA-B0E0-0A911D6A511D} = {6032A141-CE91-4E40-8D15-9A0DF591209F}
-		{A43017BA-18B2-42E9-9203-A21103B3BDDC} = {7800EC21-AA2B-42DA-B0E0-0A911D6A511D}
-		{FB0EF53A-048C-4960-95E5-1DBA089523AD} = {7800EC21-AA2B-42DA-B0E0-0A911D6A511D}
+		{D5B13924-F172-491D-9E6D-BCEAD9209FB7} = {6790D5B0-6CEA-4997-AA5E-2172E9B43A6D}
+		{2F2491C8-9E4D-4530-9C51-89E0D3901570} = {6790D5B0-6CEA-4997-AA5E-2172E9B43A6D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDD892A1-2015-4E0F-A6B0-401BA592B4E6}
